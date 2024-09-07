@@ -1,0 +1,1147 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "1b85f0fc-5427-4c5b-a27a-0d48200132ed",
+   "metadata": {},
+   "source": [
+    "## 1.Discuss string slicing and provide example?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "df076eec-12a2-472d-8eba-8aca334bb7e3",
+   "metadata": {},
+   "source": [
+    "### String Slicing is a Powerful tool for manipulating strings In Python. It allows youto extract specific parts of a string, reverse a String, or skip characters."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "8eb7ab8d-7306-45e3-8043-a278b186d9c3",
+   "metadata": {},
+   "source": [
+    "string[start:stop:step]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0fccdcb4-0bac-4bd4-a363-6724901e357b",
+   "metadata": {},
+   "source": [
+    "### Start- The starting index (Inclusive)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87512be8-eec4-4f31-9cec-bd929184b262",
+   "metadata": {},
+   "source": [
+    "### Stop- The ending index (exclusive)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d0de5248-af59-4605-b2a7-ac0ad5e663f7",
+   "metadata": {},
+   "source": [
+    "### Step- The increment between indices"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "79a67116-5b61-49c2-aa29-c2432b8719f1",
+   "metadata": {},
+   "source": [
+    "Examples-----"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1ec7e5f1-bc81-4f82-9204-186f093550bc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "text = \"Hello rohit\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "b8692843-2a89-4045-9365-8214b410ee4a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[0:5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "9fc30772-3b18-43e8-9232-797af56e3700",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello rohi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[0:-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "ed99d9b7-bc02-49bf-9e76-54dba1e088a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "rohi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[6:10])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "bc3a175a-8d8d-4c2d-8753-dce6c0e9b644",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "throlH\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(text[::-2])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "21dca37d-3549-491b-b4eb-7f195f850a42",
+   "metadata": {},
+   "source": [
+    "## 2.Explain the key features of lists in python?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "738baf85-b5d0-40ad-b5fa-645948388980",
+   "metadata": {},
+   "source": [
+    "#### 1.Ordered Collections:- lists are ordered collections of items, meaning that the order of the items matters."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "20274bc4-d2a0-4170-9545-0ef8cbec0d17",
+   "metadata": {},
+   "source": [
+    "#### 2.Mutable:- Lists are mutable, meaning you can modify them after creation."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c89bc019-ae32-4b17-a40f-963a69eb1d94",
+   "metadata": {},
+   "source": [
+    "#### 3.Indexing:- lists are indexed, meaning each item has a unique index (starting from 0)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ac1e4c8a-d4f5-4841-b892-2cd206601496",
+   "metadata": {},
+   "source": [
+    "#### 4.Heterogeneous:- Lists can contain items of different data types(eg. strings, integers, floats etc. )"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "258eac91-447f-417b-9d03-ce98dc691d44",
+   "metadata": {},
+   "source": [
+    "#### 5.supports method:- Lists have built-in methods like append(), insert(), remove(), Reverse() etc."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "303fbac2-0dc3-41a6-9940-fa6e2fad394e",
+   "metadata": {},
+   "source": [
+    "Example---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "ae55bf77-9e5a-4c8d-9553-5b98b43effc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1, 2, 3]\n",
+    "my_list.append(4)     # Adding an element\n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9a15f377-44ba-46e6-9afd-997723d9247e",
+   "metadata": {},
+   "source": [
+    "## 3.Describe how to access,modify and Delete elements in a list with examples."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "783b4bf9-5a11-4d48-8bae-bd2eed8d92f6",
+   "metadata": {},
+   "source": [
+    "Accessing Elements---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "7acce833-b7f5-4d0a-9e05-d04f21c3d39f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list = [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "8a3915aa-7259-440b-9b85-5672167debd5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_list[0])"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "e2c1a1c9-d005-4990-8f80-dccf57ae54be",
+   "metadata": {},
+   "source": [
+    "Deleting Elements---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "54f1bf92-f326-4eb7-aa40-4782593e03e2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list = [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "655d974c-6312-4b7e-865b-90638416f634",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list.remove(2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "0a295f8e-2c5c-4108-8d43-8e0dcd55842e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "ff474ca6-f599-4d2c-bb35-0583bb0a9edb",
+   "metadata": {},
+   "source": [
+    "Modifying Elements---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "b069cd5e-2260-426e-a684-652241dd86a3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list = [1, 2, 56]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "3f6fceb9-7b84-4bc4-a066-dbcf5e91736a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list[2] = 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "943c80ff-a964-4a4f-a7d8-87ea42b4d620",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c847eafe-0481-4f34-b206-dd970d70ab50",
+   "metadata": {},
+   "source": [
+    "### 4.Compare and contrast tuples and lists with examples?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b1483bc-3d63-4cb5-a2ec-4ea6ad1798e5",
+   "metadata": {},
+   "source": [
+    "#### ~Tuples and lists are both sequence data types in python, but they differ in several important ways."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "834da156-c35b-4a64-be65-6c3dfd9d657c",
+   "metadata": {},
+   "source": [
+    "#### Features with examples"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b4154e4-f0cd-4ce7-be40-a97b89a1df35",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "#### 1. Mutability"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6263d84e-c780-443e-8880-df9ab2fe6632",
+   "metadata": {},
+   "source": [
+    "#### ~Tuples are immutable, meaning once a tuple is created, its elements cannot be changed, added, or removed.\n",
+    "#### ~Lists are mutable, meaning you can change, add, or remove elements after the list is created."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "6dd5943d-c71f-4afe-ad55-41d8a318d00a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Tuple (Immutable)\n",
+    "t = (5, 6, 8)\n",
+    "# t[2] = 7  #This would raise an error because tuples can't be changed."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "a33dc735-e780-4c56-811c-07fdb0f8fb42",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[11, 12, 13]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List (Mutable)\n",
+    "l = [10, 12, 13]\n",
+    "l[0] = 11  #This works because listd are mutable.\n",
+    "print(l)  "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c72b2af-166c-45c6-9aff-34aa0976f4be",
+   "metadata": {},
+   "source": [
+    "#### 2. Syntax"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "041ddf72-d2d7-43d5-8524-1895ce936b7a",
+   "metadata": {},
+   "source": [
+    "#### ~Tuples are created using parentheses( ) or just separating values by commas.\n",
+    "#### ~Lists are created using square brackets[ ]."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "280a043b-4577-4bb1-8f8c-da7a25f361b9",
+   "metadata": {},
+   "source": [
+    "Example:----"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "633c52d3-9f0e-4ea0-ab2f-e3190928cf5f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Tuple\n",
+    "t = (21, 22, 23)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "71c3c7a0-d029-4b97-9783-2580ffdcb353",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# List\n",
+    "l = [21, 22, 23]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "86253645-a2c4-4687-9572-0cf03f897ed2",
+   "metadata": {},
+   "source": [
+    "#### 3. Use cases"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1b6e260c-8b94-4751-9fe7-8c043a4de4f9",
+   "metadata": {},
+   "source": [
+    "#### ~Tuples are generally used for storing a collection of items that should not change throughout the program (e.g., coordinates, configurations).\n",
+    "#### ~Lists are used when you have a collection of items that may change or need modification during the execution of a program."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "3bdd7f15-bd27-4b2a-a671-05e8ba8ebe83",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Tuple for coordinates (Immutable)\n",
+    "coordinates = (12.0, 22.0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "3a356546-8c36-4dde-9b79-8cc150e4b54f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['rice', 'wheat', 'sweet', 'chatni']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List for shopping list (Mutable)\n",
+    "shopping_list = [\"rice\", \"wheat\", \"sweet\"]\n",
+    "shopping_list.append(\"chatni\")# Lists can be modified\n",
+    "print(shopping_list)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "501e2347-ffa3-4382-85d9-902e64f8a1d5",
+   "metadata": {},
+   "source": [
+    "### 5.Describe the key features of sets and provide examples of their use?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "89dad6d0-cd1c-42a9-b82a-f96da84b75b8",
+   "metadata": {},
+   "source": [
+    "#### Key features of sets in python"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c929e2c6-cccd-441c-96fc-5255e01434da",
+   "metadata": {},
+   "source": [
+    "#### 1. Unordered"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e8ab317a-db8c-447b-b570-14f9efdcd058",
+   "metadata": {},
+   "source": [
+    "#### ~Sets are unordered collections, meaning the elements in a set do not have a defined or fixed order."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "767abb49-482e-4773-9d81-32f08eeb236f",
+   "metadata": {},
+   "source": [
+    " Example:---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "c7994e22-221a-42a9-8685-b1331dc094ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_set = {3, 1, 4, 2}\n",
+    "print(my_set)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "445a8ff7-7273-49f0-a82c-ca4d4db4f4e0",
+   "metadata": {},
+   "source": [
+    "#### 2. No Duplicates"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc478185-37fe-42aa-a1b6-d66179b483d7",
+   "metadata": {},
+   "source": [
+    "#### ~Sets do not allow duplicate elements. If you try to add the same element multiple times, it will only appear once."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "cae357ee-a655-437f-bfb6-b08d216d4cb1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_set = {1, 1, 2, 2, 3}\n",
+    "print(my_set)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "009b5809-5f3f-4cd2-b889-6a24db93a17c",
+   "metadata": {},
+   "source": [
+    "#### Example use cases of sets"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f4972006-4097-4011-83d4-9ede1e54ba16",
+   "metadata": {},
+   "source": [
+    "#### 1. Removing Duplicates from a list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2347fe22-35f5-41bd-b327-bfd7887804d8",
+   "metadata": {},
+   "source": [
+    "#### ~Since sets automatically discard duplicates, you can use them to remove duplicate values from a list."
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "6d6c8d4a-adb7-45b2-8f9e-0ac3b3e6563c",
+   "metadata": {},
+   "source": [
+    "Example:----"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "4d60b07b-1fcf-4b8b-b690-420c16ad72d5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1, 1, 2, 2, 3, 4, 5]\n",
+    "unique_items = set(my_list)\n",
+    "print(unique_items) "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6e96c78b-6a23-4017-99d9-f1c843cb9a77",
+   "metadata": {},
+   "source": [
+    "### 6. Discuss the use cases of tuples and sets in python programming?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "091b3c2f-2204-48cd-84b9-70d95f392fbe",
+   "metadata": {},
+   "source": [
+    "#### ~Tuples and sets are two important data structures that serve different purposes. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4beac9c9-ee74-4bdc-8f40-8b34bf85ef0a",
+   "metadata": {},
+   "source": [
+    "#### Tuples:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "932cce43-a4e6-426d-b908-807e4825f4d0",
+   "metadata": {},
+   "source": [
+    "#### A tuple is an immutable, ordered collection of elements. Once created, its elements cannot be changed, added, or removes."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d2b03e7c-2c4e-4b61-b65b-7b781308f532",
+   "metadata": {},
+   "source": [
+    "#### Use cases of tuples:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c9cc45cc-3487-478a-b862-564861a0354e",
+   "metadata": {},
+   "source": [
+    "#### 1. Storing fixed collections:\n",
+    "#### ~ Since tuples are immutable, they are used to store data that must remain constant throughout the program.\n",
+    "#### ~Example: Storing coordinates of a point, like coordinates = (5, 10)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "08ada700-3871-4755-95b7-1867d9c0fcdc",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "#### 2. Return multiple values from functions:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6548eec7-7c51-4bfb-aa74-4b216a70b34e",
+   "metadata": {},
+   "source": [
+    "#### ~Functions can return multiple values as a tuple.\n",
+    "#### ~Example:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "0b5b4ae3-ddbf-4296-aca9-b83b91908e44",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_user_info():\n",
+    "    return (\"John\", 25)\n",
+    "name, age = get_user_info()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d713f1f2-1ffa-42f4-b0a6-7fa4156f5062",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "#### Sets:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "62af4029-80fc-49df-afdc-b2d8778905b0",
+   "metadata": {},
+   "source": [
+    "#### A set is an unordered collection of unique elements. It does not allow duplicate entries and it is mutable."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f277b3c1-8b90-4fd5-88f9-fcc56f1f3ac2",
+   "metadata": {},
+   "source": [
+    "#### Use cases of sets:\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b23afda6-1c62-42a3-b8ce-d724787c3323",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "#### 1. Removing duplicates from a list:\n",
+    "#### ~When you need to eliminate duplicates, converting a list to a set is a simple way to ensure all elements are unique.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "44dcafdb-b00f-4742-beb1-3d394bae2791",
+   "metadata": {},
+   "source": [
+    "#### 2. Membership testing:\n",
+    "#### ~Sets allow for fast membership testing (checking if an element is in a set).\n",
+    "#### ~Example:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "21288563-a634-4083-a1d1-67c4af14cf6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple is in the set.\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits = {\"apple\", \"banana\", \"cherry\"}\n",
+    "if \"apple\" in fruits:\n",
+    "    print(\"apple is in the set.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "49beaf11-b2e4-43d3-9da0-0495d98cacfa",
+   "metadata": {},
+   "source": [
+    "### 7. Describe how to add, modify, and delete items in a dictionary with examples?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "39270c6d-53c3-49fe-99e5-73444ba12b40",
+   "metadata": {},
+   "source": [
+    "#### ~ Dictionaries are mutable collections of key-vakue pairs, where each key is unique.\n",
+    "#### ~ You can add, modify, and delete items easily."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9c23df45-8cd7-4a8a-9b74-8132babae7c7",
+   "metadata": {},
+   "source": [
+    "#### 1. Adding items to a dictionary\n",
+    "#### ~You can add items by assigning a value to a new key.\n",
+    "#### ~Example"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "329b9b2d-2520-4f8b-832c-d7db74faf3a3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Create a dictionary\n",
+    "student = {\"name\": \"Rahul\", \"age\": 22}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "6c403fac-6a8f-4e84-b75f-b582f0ede021",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Add a new key-value pair\n",
+    "student[\"major\"] = \"Home science\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "2ef0e249-7bb5-4a78-a385-802e873c3189",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'Rahul', 'age': 22, 'major': 'Home science'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f88e8b70-86ed-478e-b6a4-63b425116c68",
+   "metadata": {},
+   "source": [
+    "#### 2. Modifying items in a dictionary"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f01ec6e-b4dd-4566-a33b-d4ee4c2804f7",
+   "metadata": {},
+   "source": [
+    "#### ~To modify an existing item, assign a new value to an existing key.\n",
+    "#### ~Example:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "fcc20345-b2e0-48a2-98c9-b53d426f64b5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Modify the value of an existing key\n",
+    "student[\"age\"] = 24"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "6a483332-9ff1-4cdb-b8e8-3c030b21da24",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'Rahul', 'age': 24, 'major': 'Home science'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "784e0fea-c5b1-47e9-b9bb-07faa00a62e1",
+   "metadata": {},
+   "source": [
+    "#### 3. Deleting items from a dictionary\n",
+    "#### ~You can delete items from a dictionary using several methods:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "666740d7-e55a-44c5-bec2-48cde2b6a951",
+   "metadata": {},
+   "source": [
+    "#### a. Using del:\n",
+    "#### You can delete a specific key-value pair with the del keyword.\n",
+    "#### Example:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "722d5cb8-c989-4dc6-b66d-3f84f26c6e32",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Delete a specific item\n",
+    "del student[\"major\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "96435add-db17-4f88-bb31-63315196b1b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'Rahul', 'age': 24}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "08e24d89-345a-4fd0-8aa9-67879fb0f27b",
+   "metadata": {},
+   "source": [
+    "### 8. Discuss the importance of dictionary keys being immutable and provide examples?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "299665b2-4925-4a03-9b88-780159a31a2e",
+   "metadata": {},
+   "source": [
+    "#### Dictionary keys must be immutable in python for several important reasons:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8b33f07-2d48-47b5-a81f-3a618da405a4",
+   "metadata": {},
+   "source": [
+    "#### 1. Hashing requirement\n",
+    "#### ~ Dictionaries in python are implemented as hash maps where each key is hashed to a specific memory location for fast lookups."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "af67da0c-c3f5-460c-a7b6-0b6a40bdb1f1",
+   "metadata": {},
+   "source": [
+    "#### 2. Consistency\n",
+    "#### ~ If dictionary keys were mutable, changing the key after it's been inserted into thr dictionary would create inconsistencies\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "568ee9d9-71a0-4d08-a36a-3c0bc65f4447",
+   "metadata": {},
+   "source": [
+    "#### 3. Performance\n",
+    "#### ~ Immutable objects like strings and tuples have fixed memory locations, hashing them is more efficient and key lookup remains fast."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9aa26c54-1b75-4372-bf06-2d077d455275",
+   "metadata": {},
+   "source": [
+    "#### Examples of immutable vs mutable objects:\n",
+    "#### Immutable objects: strings, numbers (integers, floats),tuples.\n",
+    "#### Mutable objects: lists, sets, dictionaries."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a282ec97-e23a-4150-89ca-40949d289c55",
+   "metadata": {},
+   "source": [
+    "#### Example 1: Immutable key(allowed)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "7c296d6a-02af-43ba-bfb9-429473183690",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Using an immutable string as a key\n",
+    "my_dict = {\"name\": \"Rohit\", \"age\": 22}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "93793edf-ff60-4731-a87d-0a1d11156032",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Rohit\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Accessing a value using the key\n",
+    "print(my_dict[\"name\"])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d2f04678-f826-492f-a04b-1dc2cd3ddf78",
+   "metadata": {},
+   "source": [
+    "#### Example 2: Mutable key (not allowed)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "a38096f6-f901-48be-a472-b7e04f1b991a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "unhashable type: 'list'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[73], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;66;03m# Using a mutable list as a key\u001b[39;00m\n\u001b[1;32m      2\u001b[0m my_list \u001b[38;5;241m=\u001b[39m [\u001b[38;5;241m1\u001b[39m, \u001b[38;5;241m2\u001b[39m, \u001b[38;5;241m3\u001b[39m]\n\u001b[0;32m----> 3\u001b[0m my_list \u001b[38;5;241m=\u001b[39m {my_list: \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mInvalid\u001b[39m\u001b[38;5;124m\"\u001b[39m}\n",
+      "\u001b[0;31mTypeError\u001b[0m: unhashable type: 'list'"
+     ]
+    }
+   ],
+   "source": [
+    "# Using a mutable list as a key\n",
+    "my_list = [1, 2, 3]\n",
+    "my_list = {my_list: \"Invalid\"}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1604e316-2b21-44aa-95c3-1f0fb6da0eb4",
+   "metadata": {},
+   "source": [
+    "#### Example 3: Tuples as keys(immutable compound type)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "8957461b-938b-496d-b55d-aa19c2ff6338",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Tuples through compound are immutable and can be used as keys\n",
+    "coordinates = (10, 50)\n",
+    "location_dict = {coordinates: \"club\"}"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
